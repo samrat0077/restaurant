@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Paradise - Authentic Indian Cuisine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Spice Paradise</div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') center/cover">
+        <div class="hero-content">
+            <h1>Welcome to Spice Paradise</h1>
+            <p>Experience the authentic flavors of India</p>
+            <a href="#menu" class="cta-button">View Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Specialties</h2>
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="starters">Starters</button>
+            <button class="filter-btn" data-filter="main">Main Course</button>
+            <button class="filter-btn" data-filter="bread">Breads</button>
+            <button class="filter-btn" data-filter="dessert">Desserts</button>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-item" data-category="main">
+                <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Butter Chicken">
+                <h3>Butter Chicken</h3>
+                <p>Tender chicken in rich tomato-based curry sauce</p>
+                <span class="price">$16.99</span>
+            </div>
+            <div class="menu-item" data-category="main">
+                <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Biryani">
+                <h3>Biryani</h3>
+                <p>Aromatic rice dish with exotic spices</p>
+                <span class="price">$18.99</span>
+            </div>
+            <div class="menu-item" data-category="main">
+                <img src="https://images.unsplash.com/photo-1628294895950-9805252327bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tandoori">
+                <h3>Tandoori Specialties</h3>
+                <p>Clay oven-baked delicacies</p>
+                <span class="price">$20.99</span>
+            </div>
+            <div class="menu-item" data-category="bread">
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Naan Bread">
+                <h3>Fresh Naan Bread</h3>
+                <p>Traditional Indian bread baked to perfection</p>
+                <span class="price">$3.99</span>
+            </div>
+            <div class="menu-item" data-category="dessert">
+                <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Indian Desserts">
+                <h3>Sweet Delicacies</h3>
+                <p>Traditional Indian desserts and sweets</p>
+                <span class="price">$6.99</span>
+            </div>
+            <div class="menu-item" data-category="main">
+                <img src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Vegetarian Thali">
+                <h3>Vegetarian Thali</h3>
+                <p>Assorted vegetarian dishes served with rice and bread</p>
+                <span class="price">$15.99</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section" style="background: linear-gradient(rgba(249, 249, 249, 0.9), rgba(249, 249, 249, 0.9)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') center/cover fixed">
+        <div class="about-content">
+            <h2>Our Story</h2>
+            <p>Founded in 2010, Spice Paradise brings the authentic taste of Indian cuisine to your table. Our chefs use traditional recipes and the finest ingredients to create memorable dining experiences.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We use only the finest and freshest ingredients</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-award"></i>
+                    <h3>Award Winning</h3>
+                    <p>Multiple culinary awards for excellence</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h3>Fast Service</h3>
+                    <p>Quick and efficient dining experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Our Restaurant</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Restaurant Interior">
+                <div class="gallery-overlay">
+                    <span>Elegant Dining Area</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1516211697506-8360dbcfe9a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Kitchen">
+                <div class="gallery-overlay">
+                    <span>Modern Kitchen</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1621871908119-295c8ce5cee4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Spices">
+                <div class="gallery-overlay">
+                    <span>Fresh Spices</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517244683847-7456b63c5969?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1588&q=80" alt="Private Dining">
+                <div class="gallery-overlay">
+                    <span>Private Dining Area</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="offers-section">
+        <div class="offers-content">
+            <h2>Special Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1542367592-8849eb950fd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Lunch Special">
+                    <div class="offer-details">
+                        <h3>Lunch Special</h3>
+                        <p>20% off on all lunch combos</p>
+                        <span class="offer-time">Mon-Fri, 12PM-3PM</span>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1536392706976-e486e2ba97af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Family Package">
+                    <div class="offer-details">
+                        <h3>Family Feast</h3>
+                        <p>Special family package for 4</p>
+                        <span class="offer-time">Weekends Only</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Customer 1" class="testimonial-img">
+                        <p>"The best Indian restaurant in town! The butter chicken is absolutely divine."</p>
+                        <h3>Sarah Johnson</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Customer 2" class="testimonial-img">
+                        <p>"Authentic flavors that remind me of home. Great ambiance and service!"</p>
+                        <h3>Raj Patel</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="testimonial-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="testimonial-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="reservation-container">
+            <h2>Make a Reservation</h2>
+            <form id="reservationForm" class="reservation-form">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder="Your Name">
+                    <input type="email" id="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <input type="date" id="date" required>
+                    <input type="time" id="time" required>
+                </div>
+                <div class="form-group">
+                    <select id="guests" required>
+                        <option value="">Number of Guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5+ People</option>
+                    </select>
+                    <input type="tel" id="phone" required placeholder="Phone Number">
+                </div>
+                <textarea id="special-requests" placeholder="Special Requests (Optional)"></textarea>
+                <button type="submit" class="cta-button">Reserve Table</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info-container">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info-content">
+                                <h3>Location</h3>
+                                <p>galgotias university, Foodville</p>
+                                <p>Greater Noida, Uttar Pradesh 201301</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="info-content">
+                                <h3>Phone</h3>
+                                <p>Reservations: +91 90847404</p>
+                                <p>Takeout: +91 90847404</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p>info@spiceparadise.com</p>
+                                <p>reservations@spiceparadise.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="info-content">
+                                <h3>Hours</h3>
+                                <div class="hours-grid">
+                                    <div class="day">Monday - Friday</div>
+                                    <div class="time">11:00 AM - 10:00 PM</div>
+                                    <div class="day">Saturday</div>
+                                    <div class="time">11:00 AM - 11:00 PM</div>
+                                    <div class="day">Sunday</div>
+                                    <div class="time">12:00 PM - 9:00 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links-container">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/heyy.aadiii_69" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/adityasamrat_07" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-yelp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-header">
+                            <h3>Send us a Message</h3>
+                            <p>Have questions? We'd love to hear from you.</p>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" id="contactName" required>
+                                <label for="contactName">Your Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="contactEmail" required>
+                                <label for="contactEmail">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="contactSubject" required>
+                            <label for="contactSubject">Subject</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="contactMessage" required></textarea>
+                            <label for="contactMessage">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112857.37298594391!2d77.4418363186105!3d28.474085843215492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea64b8f89aef%3A0xec0ccabb5317962e!2sGreater%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1710350612776!5m2!1sen!2sin"
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/heyy.aadiii_69" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/adityasamrat_07" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Spice Paradise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
